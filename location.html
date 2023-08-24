@@ -114,7 +114,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="location-map section">
                 <div class="container">
                     <div class="map" id="map">
 
@@ -123,12 +123,62 @@
                         ymaps.ready(init);
                         let coord = [55.753564, 37.648843]
                         let mapPoints = [{
-                            latitude: "",
-                            longitude: "",
-                            name: "",
-                            type: "",
-                            address: "",
-                        }, ]
+                                latitude: 55.753559,
+                                longitude: 37.644782,
+                                name: "Магазин с длинным названием",
+                                type: "health",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.752582,
+                                longitude: 37.649004,
+                                name: "Магазин с длинным названием",
+                                type: "restaurant",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.752972,
+                                longitude: 37.651583,
+                                name: "Магазин с длинным названием",
+                                type: "restaurant",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.752865,
+                                longitude: 37.654125,
+                                name: "Магазин с длинным названием",
+                                type: "sport",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.754725,
+                                longitude: 37.652831,
+                                name: "Магазин с длинным названием",
+                                type: "education",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.755297,
+                                longitude: 37.655796,
+                                name: "Магазин с длинным названием",
+                                type: "religion",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.757095,
+                                longitude: 37.648214,
+                                name: "Магазин с длинным названием",
+                                type: "beauty",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                            {
+                                latitude: 55.755976,
+                                longitude: 37.645528,
+                                name: "Магазин с длинным названием",
+                                type: "shops",
+                                address: "125284, г. Москва, сЛенинградский проспект, 31Ас1"
+                            },
+                        ]
 
 
 
@@ -151,39 +201,36 @@
 
 
                             mapPoints.forEach(el => {
-                                // let placeMark = new ymaps.Placemark(el.cords, {
-                                //         balloonContentHeader: ``,
-                                //         balloonContentBody: `
-                                //     <div class="place-card">
-                                //         <div class="place-card__title">
-                                //             ${el.title}
-                                //         </div>
-                                //         <div class="place-card__address">
-                                //             ${el.address}
-                                //         </div>
-                                //         <a href="tel:${el.phone}" class="place-card__phone">
-                                //             <img src="img/phone2.svg" alt="">
-                                //             <span>${el.phone}</span>
-                                //         </a>
-                                //         <a href="${el.site}" class="place-card__site">
-                                //             ${el.site}
-                                //         </a>
-                                //         <div class="place-card__work">
-                                //             <span>Работаем </span>
-                                //             ${el.workTime}
-                                //         </div>
-                                //     </div>
-                                //     `,
-                                //         balloonContentFooter: '',
-                                //         hintContent: '',
-                                //     },
-                                //     {
-                                //         iconLayout: 'default#image',
-                                //         iconImageHref: "img/mark.svg",
-                                //         iconImageSize: [30, 30],
-                                //     }
-                                // );
-                                // myMap.geoObjects.add(placeMark);
+                                let placeMark = new ymaps.Placemark([el.latitude, el.longitude], {
+                                    balloonContentHeader: ``,
+                                    balloonContentBody: `
+                <div class="place-card">
+                    <div class="text20">${el.name}</div>
+                    <div class="place-card__address text14 dark-text">
+                        ${el.address}
+                    </div>
+                </div>
+                `,
+                                    balloonContentFooter: '',
+                                    hintContent: '',
+                                }, {
+                                    hideIconOnBalloonOpen: false,
+                                    iconLayout: 'default#image',
+                                    iconImageHref: `img/${el.type}.svg`,
+                                    iconImageSize: [40, 40],
+                                    iconImageOffset: [-20, -20],
+                                    // balloonOffset: [
+                                    //     -50%,
+                                    //     el.iconImageSize[1]
+                                    // ]
+                                });
+                                placeMark.events.add('mouseenter', function() {
+                                    console.log(true)
+                                });
+
+                                myMap.geoObjects.add(placeMark);
+
+
                             })
 
 
@@ -260,6 +307,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@@description">
+    <meta name="keywords" content="@@keywords">
+</head>
+
+<style>
+    @font-face {
+        font-family: "PF DinText Pro";
+        src: url(fonts/PFDinTextUniversal.ttf) format("ttf"), url(fonts/PFDinTextUniversal.woff) format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: "PF DinText Pro";
+        src: url(fonts/PFDinTextUniversal-Medium.ttf) format("ttf"), url(fonts/PFDinTextUniversal-Medium.woff) format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: EuropeExt;
+        src: url(fonts/EuropeExtBold.ttf) format("ttf"), url(fonts/EuropeExtBold.woff) format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: Europe;
+        src: url(fonts/EuropeC-Bold.ttf) format("ttf"), url(fonts/EuropeC-Bold.woff) format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .page {
+        padding: 120px 0 64px;
+        font-family: "PF DinText Pro", sans-serif;
+        text-align: center;
+        color: #1D3670;
+    }
+
+    .error404__info {
+        width: 545px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .error404__title {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+    }
+
+    .error404__desc {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .m-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-transition: .225s ease-out;
+        -o-transition: .225s ease-out;
+        transition: .225s ease-out;
+        padding: 0;
+        max-width: 100%;
+        width: 240px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 500;
+        border-radius: 1000px
+    }
+
+    .m-btn:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+
+    .m-btn-primary {
+        background-color: #ee7708;
+        color: #fff
+    }
+
+    .m-btn-primary:hover {
+        background-color: #f58b1c;
+        color: #fff
+    }
+
+    .error404__nav {
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .error404__btn {
+        margin: 0 auto;
+    }
+
+    .error404__num {
+        font-family: EuropeExt, sans-serif;
+        font-size: 304px;
+        font-weight: 700;
+        line-height: 97%;
+        text-align: center;
+        margin-top: 80px;
+        color: #EDEEEF;
+    }
+
+    @media screen and (max-width: 1031px) {
+        .error404 {
+            padding: 80px 16px;
+        }
+
+        .error404__title {
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: -0.2px;
+            font-family: Europe, sans-serif;
+        }
+
+        .error404__desc br {
+            display: none;
+        }
+
+        .error404__num {
+            font-size: 104px;
+            margin-top: 40px;
+        }
+    }
+</style>
+
+<body class="page error404">
+    <div class="error404__info">
+        <h1 class="error404__title">
+            Такой страницы не существует
+        </h1>
+        <div class="error404__desc">
+            Мы обязательно разберёмся куда всё пропало. <br>
+            А вы пока вернитесь на главную или перейдите к выбору квартиры
+        </div>
+    </div>
+    <div class="error404__nav">
+        <a href="" class="error404__btn m-btn m-btn-primary">
+            Выбрать квартиру
+        </a>
+    </div>
+    <div class="error404__num">404</div>
+</body>
+
+</html>
