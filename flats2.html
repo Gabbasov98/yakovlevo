@@ -835,40 +835,44 @@
                     </div>
                     <ol class="buy-way__items">
                         <li class="buy-card">
-                            <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text"></div>
-                                <div class="text32 font3 bold-text">
-                                    Ипотека
+                            <a href="" class="buy-card__inner">
+                                <div class="buy-card__content">
+                                    <div class="buy-card__num text16 gray-text"></div>
+                                    <div class="text32 font3 bold-text">
+                                        Ипотека
+                                    </div>
+                                    <div class="text16 dark-text">
+                                        Описание способа покупки ипотека
+                                    </div>
                                 </div>
-                                <div class="text16 dark-text">
-                                    Описание способа покупки ипотека
+                                <div class="buy-card__nav">
+                                    <span class="buy-card__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 12L9 6.80385L9 17.1962L18 12Z" fill="#EE7708"/>
+                    </svg>
+                </span>
                                 </div>
-                            </div>
-                            <div class="buy-card__nav">
-                                <a href="" class="buy-card__btn">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 12L9 6.80385L9 17.1962L18 12Z" fill="#EE7708" />
-                                    </svg>
-                                </a>
-                            </div>
+                            </a>
                         </li>
                         <li class="buy-card">
-                            <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text"></div>
-                                <div class="text32 font3 bold-text">
-                                    100% оплата
+                            <a href="" class="buy-card__inner">
+                                <div class="buy-card__content">
+                                    <div class="buy-card__num text16 gray-text"></div>
+                                    <div class="text32 font3 bold-text">
+                                        100% оплата
+                                    </div>
+                                    <div class="text16 dark-text">
+                                        Описание способа покупки 100% оплата
+                                    </div>
                                 </div>
-                                <div class="text16 dark-text">
-                                    Описание способа покупки 100% оплата
+                                <div class="buy-card__nav">
+                                    <span class="buy-card__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 12L9 6.80385L9 17.1962L18 12Z" fill="#EE7708"/>
+                    </svg>
+                </span>
                                 </div>
-                            </div>
-                            <div class="buy-card__nav">
-                                <a href="" class="buy-card__btn">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 12L9 6.80385L9 17.1962L18 12Z" fill="#EE7708" />
-                                    </svg>
-                                </a>
-                            </div>
+                            </a>
                         </li>
                     </ol>
                 </div>
@@ -1004,28 +1008,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="req-modal__content">
+                <div class="req-modal__content _view1">
                     <div class="text32 text32-mob bold-text font3">
                         Оставьте заявку
                     </div>
                     <div class="req-modal__desc text16 dark-text">
                         Оставьте ваш номер телефона, чтобы получить консультацию или рассчитать ипотеку
                     </div>
-                    <form class="req-form">
+                    <form id="req-form" class="req-form">
                         <fieldset class="fg">
-                            <input type="text" value="dfdfdf">
+                            <input name="name" type="text">
                             <label>Имя</label>
-                            <span class="fg__error">Обязательное поле</span>
                         </fieldset>
                         <fieldset class="fg">
-                            <input type="tel">
+                            <input name="phone" type="tel">
                             <label>Номер телефона</label>
+                            <div class="fg__error">
+                                <span class="error-mess _required-mess">Обязательное поле</span>
+                                <span class="error-mess _not-correct-mess">Неправильный номер</span>
+                            </div>
                         </fieldset>
-                        <button type="submit" disabled class="req-form__btn m-btn m-btn-primary">
+                        <button type="button" disabled class="req-form__btn m-btn m-btn-primary">
                             Записаться на встречу
                         </button>
                         <div class="m-check">
-                            <input type="checkbox">
+                            <input name="user_confirm" type="checkbox">
                             <label>
                                 Я даю согласие на обработку моих персональных данных согласно
                                 <a href="">Политике конфиденциальности</a>
@@ -1033,43 +1040,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="modal req-modal" id="reqModal2">
-        <div class="modal__bg _close-modal"></div>
-        <div class="modal__dialog">
-            <button class="modal__close _close-modal">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                    <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                </svg>
-            </button>
-            <div class="req-modal__grid">
-                <div class="req-modal__contacts">
-                    <div class="req-modal__img">
-                        <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/other/form__modal-image.jpg" alt="">
-                    </div>
-                    <div class="modal-contacts">
-                        <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/other/monarch-logo.svg" alt="" class="modal-contacts__logo">
-                        <div class="contact-card__content">
-                            <div class="contact-card__office">
-                                <div class="text14 gray-text">Офис продаж</div>
-                                <div class="text24 medium-text">8 495 256 56 65</div>
-                            </div>
-                            <div class="contact-card__time">
-                                <div class="text14 dark-text">Пн-Пт: 9:00 — 21:00</div>
-                                <div class="text14 dark-text">Сб-Вс: 10:00 — 19:00</div>
-                            </div>
-                            <div class="contact-card__address text14 dark-text">
-                                г. Москва, адрес офиса продаж улица пушкина дом колотушкина
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="req-modal__content">
+                <div class="req-modal__content _view2">
                     <div class="thank-info">
                         <div class="text32 text32-mob bold-text font3">
                             Спасибо за <br>
