@@ -86,38 +86,44 @@
 
                     <div class="flat-item__grid">
                         <div class="flat-item__col _tabs-parent">
-                            <div class="tab-content _tab1 _active">
-                                <div class="flat-item__img">
-                                    <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
+                            <div class="flat-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="flat-item__img">
+                                                <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flat-item__img">
+                                                <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flat-item__img">
+                                                <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flat-item__img">
+                                                <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tab-content _tab2">
-                                <div class="flat-item__img">
-                                    <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-content _tab3">
-                                <div class="flat-item__img">
-                                    <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-content _tab4">
-                                <div class="flat-item__img">
-                                    <img src="https://cdn.netsolve.ru/Projects/yakovlevo/Content/finishing/finishing__heading.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tabs">
-                                <div class="tab _tab _active" data-tab="_tab1">
-                                    Планировка
-                                </div>
-                                <div class="tab _tab" data-tab="_tab2">
-                                    С мебелью
-                                </div>
-                                <div class="tab _tab" data-tab="_tab3">
-                                    Этаж
-                                </div>
-                                <div class="tab _tab" data-tab="_tab4">
-                                    Генплан
+                                <div class="tabs">
+                                    <div class="tab _active" data-tab="0">
+                                        Планировка
+                                    </div>
+                                    <div class="tab" data-tab="1">
+                                        С мебелью
+                                    </div>
+                                    <div class="tab" data-tab="2">
+                                        Этаж
+                                    </div>
+                                    <div class="tab" data-tab="3">
+                                        Генплан
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +199,7 @@
                                 Стоимость квартиры, ₽
                             </div>
                             <div class="filter-field">
-                                <input type="number">
+                                <input class="_num-input" name="credit-sum" readonly type="text" min="1" max="999999999" value="20 356 540">
                             </div>
                         </div>
                         <div class="filter-item">
@@ -201,7 +207,7 @@
                                 Первоначальный взнос, ₽
                             </div>
                             <div class="filter-field">
-                                <input type="number">
+                                <input class="_num-input" name="first-pay" type="text" min="1" max="999999999">
                             </div>
                         </div>
                         <div class="filter-item">
@@ -209,23 +215,29 @@
                                 Срок кредита, лет
                             </div>
                             <div class="filter-field">
-                                <input type="number">
+                                <input class="_num-input" name="duration" type="text" min="3" max="30" value="3">
                             </div>
                         </div>
                     </div>
                     <div class="mortgage-calc__bottom">
                         <div class="mortgage-calc__result">
                             <div class="mortgage-calc__result-item">
-                                <div class="text28 text28-mob medium-text">5 200 000 ₽</div>
+                                <div class="text28 text28-mob medium-text">
+                                    <span class="_credit-sum-output"></span>
+                                    ₽
+                                </div>
                                 <div class="text16 dark-text">Сумма кредита</div>
                             </div>
                             <div class="mortgage-calc__result-item">
-                                <div class="text28 text28-mob medium-text">74 000 ₽</div>
+                                <div class="text28 text28-mob medium-text">
+                                    <span class="_month-sum-output"></span>
+                                    ₽
+                                </div>
                                 <div class="text16 dark-text">Ежемесячный платеж</div>
                             </div>
                         </div>
                         <div class="mortgage-calc__nav">
-                            <button class="mortgage-calc__btn m-btn m-btn-primary">
+                            <button type="button" class="mortgage-calc__btn m-btn m-btn-primary" data-modal="reqModal">
                                 Получить одобрение
                             </button>
                         </div>

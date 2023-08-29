@@ -100,12 +100,12 @@
                                 <div class="range-input">
                                     <div class="range-input__item">
                                         <span>от</span>
-                                        <input type="number" min="1" max="999999999">
+                                        <input class="_num-input" name="price_from" type="text" min="1" max="999999999">
                                     </div>
                                     <span class="range-input__split"></span>
                                     <div class="range-input__item">
                                         <span>до</span>
-                                        <input type="number" min="1" max="999999999">
+                                        <input class="_num-input" name="price_to" type="text" min="1" max="999999999">
                                     </div>
                                 </div>
                             </div>
@@ -116,38 +116,38 @@
                                 <div class="range-input">
                                     <div class="range-input__item">
                                         <span>от</span>
-                                        <input type="number" min="1" max="999">
+                                        <input class="_num-input" name="area_from" type="text" min="1" max="999">
                                     </div>
                                     <span class="range-input__split"></span>
                                     <div class="range-input__item">
                                         <span>до</span>
-                                        <input type="number" min="1" max="999">
+                                        <input class="_num-input" name="area_to" type="text" min="1" max="999">
                                     </div>
                                 </div>
                             </div>
                             <div class="filter-item">
                                 <div class="filter-item__label">
-                                    Площадь, м²
+                                    Выберите количество комнат
                                 </div>
                                 <div class="filter-checks">
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="rooms_count">
                                         <label>Студия</label>
                                     </div>
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="rooms_count">
                                         <label>1</label>
                                     </div>
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="rooms_count">
                                         <label>2</label>
                                     </div>
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="rooms_count">
                                         <label>3</label>
                                     </div>
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="rooms_count">
                                         <label>4+</label>
                                     </div>
                                 </div>
@@ -159,18 +159,18 @@
                                 <div class="range-input">
                                     <div class="range-input__item">
                                         <span>от</span>
-                                        <input type="number" min="1" max="99">
+                                        <input class="_num-input" name="floor_from" type="text" min="1" max="99">
                                     </div>
                                     <span class="range-input__split"></span>
                                     <div class="range-input__item">
                                         <span>до</span>
-                                        <input type="number" min="1" max="99">
+                                        <input class="_num-input" name="floor_to" type="text" min="1" max="99">
                                     </div>
                                 </div>
                             </div>
                             <div class="filter-item building-item">
                                 <div class="filter-item__label">
-                                    Выберите этаж
+                                    Выберите корпус
                                 </div>
                                 <div class="m-select">
                                     <select name="building" data-placeholder="Корпус">
@@ -199,11 +199,11 @@
                                 </div>
                                 <div class="filter-checks _advantages">
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="flat_advantage">
                                         <label>Палисадник</label>
                                     </div>
                                     <div class="filter-checks__item">
-                                        <input type="checkbox" name="" id="">
+                                        <input type="checkbox" name="flat_advantage">
                                         <label>Терраса</label>
                                     </div>
                                 </div>
@@ -728,12 +728,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="buy-way__items">
-                        <div class="buy-card">
+                    <ol class="buy-way__items">
+                        <li class="buy-card">
                             <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text">
-                                    01
-                                </div>
+                                <div class="buy-card__num text16 gray-text"></div>
                                 <div class="text32 font3 bold-text">
                                     Ипотека
                                 </div>
@@ -748,12 +746,10 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="buy-card">
+                        </li>
+                        <li class="buy-card">
                             <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text">
-                                    02
-                                </div>
+                                <div class="buy-card__num text16 gray-text"></div>
                                 <div class="text32 font3 bold-text">
                                     100% оплата
                                 </div>
@@ -768,8 +764,8 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ol>
                 </div>
 
             </section>

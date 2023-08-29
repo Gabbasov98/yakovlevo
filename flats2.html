@@ -13,6 +13,465 @@
 </head>
 
 
+<script>
+    const map_points = [{
+            corpus_id: '1.1',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 0
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 100
+        },
+        {
+            corpus_id: '1.2',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 100
+        },
+        {
+            corpus_id: '2',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 10
+        },
+        {
+            corpus_id: '3',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 110
+        },
+        {
+            corpus_id: '4',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 70
+        },
+        {
+            corpus_id: '5',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 60
+        },
+        {
+            corpus_id: '6',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '7',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '8',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '9',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '10',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '11',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '12',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '13',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+        {
+            corpus_id: '14',
+            flats: [{
+                    name: "Студия",
+                    link: "#link",
+                    price: 5800000
+                },
+                {
+                    name: "1-комнатная",
+                    link: "#link",
+                    price: 3100000
+                },
+                {
+                    name: "2-комнатная",
+                    link: "#link",
+                    price: 4200000
+                },
+                {
+                    name: "3-комнатная",
+                    link: "#link",
+                    price: 1300000
+                },
+                {
+                    name: "4-комнатная",
+                    link: "#link",
+                    price: 15000000
+                },
+            ],
+            flats_count: 40
+        },
+    ]
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+        initFlats(map_points)
+    })
+</script>
+
 <body class="page">
     <div class="wrapper">
         <header class="header">
@@ -142,1341 +601,6 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="plan-modal" data-num="1.1">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 1.1
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="1.2">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 1.2
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="2">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 2
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="3">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 3
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="4">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 4
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="5">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 5
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="6">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 6
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="7">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 7
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="8">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 8
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="9">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 9
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="10">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 10
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="11">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 11
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="12">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 12
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="13">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 13
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
-                        <div class="plan-modal" data-num="14">
-                            <div class="plan-modal__wrap">
-                                <div class="plan-modal__top">
-                                    <div class="text40 medium-text">
-                                        Корпус 14
-                                    </div>
-                                    <button class="plan-modal__close">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.6667 8L20 9.33333L9.33333 20L8 18.6667L18.6667 8Z" fill="#A7A9AC" />
-                                            <path d="M20 18.6667L18.6667 20L8 9.33333L9.33333 8L20 18.6667Z" fill="#A7A9AC" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="plan-modal__items">
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            Студия
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 4,5 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            1-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 5,3 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            2-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 6,1 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            3-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 gray-text">
-                        Нет в наличии
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <a href="" class="room">
-                                        <div class="text16 medium-text">
-                                            4-комнатная
-                                        </div>
-                                        <div class="room__right">
-                                            <span class="text16 dark-text">
-                        от 8,2 млн. ₽
-                    </span>
-                                            <button class="room__btn">
-                                                <img src="img/btn.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="plan-modal__bottom">
-                                    <a href="" class="plan-modal__btn m-btn m-btn-primary">
-                                        73 квартиры
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="plan-modal__bg"></div>
-                        </div>
-
                     </div>
                 </div>
             </section>
@@ -1709,12 +833,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="buy-way__items">
-                        <div class="buy-card">
+                    <ol class="buy-way__items">
+                        <li class="buy-card">
                             <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text">
-                                    01
-                                </div>
+                                <div class="buy-card__num text16 gray-text"></div>
                                 <div class="text32 font3 bold-text">
                                     Ипотека
                                 </div>
@@ -1729,12 +851,10 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="buy-card">
+                        </li>
+                        <li class="buy-card">
                             <div class="buy-card__content">
-                                <div class="buy-card__num text16 gray-text">
-                                    02
-                                </div>
+                                <div class="buy-card__num text16 gray-text"></div>
                                 <div class="text32 font3 bold-text">
                                     100% оплата
                                 </div>
@@ -1749,8 +869,8 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ol>
                 </div>
 
             </section>
